@@ -1,0 +1,54 @@
+.card_container{
+    width:100%;
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    .card_popular{
+        width:220px;
+        height:200px;
+        background-color: rgb(0, 26, 51);
+        color:white;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding:20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card_header{
+            display: flex;
+            justify-content: space-between;
+            row-gap: 15px;
+            .header_name-city{
+                font-size: 20px;
+                margin: 5px 5px 0 0;
+            }
+            
+        }
+        .card_status-city{
+            font-size: 14px;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: baseline;
+            .status-details{
+                display:flex;
+                justify-content: flex-start;
+                gap:10px;
+                .temperature , .wind{
+                    width:24px;
+                    height:24px;
+                }
+            }
+        }
+        
+    }
+}
+@media only screen and (min-width:635px){
+    .card_container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
